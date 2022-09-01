@@ -36,13 +36,13 @@ R = (Vp - Vd) / Id
 | Vd     | Volt  | LED voltage    |
 | Id     | Amper | LED current    |
 
-* `Vp` a power voltage needs to be greater than `Vd` (we need to provide more voltage than LED can consume), otherwise LED won't light up
-* each GPIO outputs `5V`
-* `Id` for each LED is the same `0.007A` (which can be represented as `7mA`).
-* red LED `Vd` is between `1.6V` and `2.2V`; we take average `1.9V`
-* yellow LED `Vd` is between `2V` and `2.3V`; we take average `2.1V`
-* blue LED `Vd` is between `2V` and `3.7V`; we take average `3.5V`
-* green LED `Vd` is between `2.9V` and `4V`; we take average `2.8V`
+ * `Vp` a power voltage needs to be greater than `Vd` (we need to provide more voltage than LED can consume), otherwise LED won't light up
+ * each GPIO outputs `5V`
+ * `Id` for each LED is the same `0.007A` (which can be represented as `7mA`).
+ * red LED `Vd` is between `1.6V` and `2.2V`; we take average `1.9V`
+ * yellow LED `Vd` is between `2V` and `2.3V`; we take average `2.1V`
+ * blue LED `Vd` is between `2V` and `3.7V`; we take average `3.5V`
+ * green LED `Vd` is between `2.9V` and `4V`; we take average `2.8V`
 
 After calculating with already presented equasion we get:
  * red's resister 443 Ohm; closest value is 470 Ohm 
@@ -72,11 +72,11 @@ There are 3 bash scripts that run these commands:
 ## Python
 
 Use Virtual Environemnts to not mess up with localy installed Python.
-1. Create venv with `python3  -m venv ./venv` command
+1. Create venv with `python -m venv ./venv` command
 1. Activate it by running `source ./venv/bin/activate`
 1. Install a python module for RPi GPIO `pip install RPi.GPIO`
 1. Run one of the scripts:
- * `python led_one_blink.py`
- * `python leds_four_blink.py`
- * `python leds_random_blink.py`
+   * `python led_one_blink.py`
+   * `python leds_four_blink.py`
+   * `python leds_random_blink.py`
 1. Deactivate venv `deactivate`
