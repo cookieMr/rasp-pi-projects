@@ -1,11 +1,23 @@
-from gpiozero import LED, Button        
+import RPi.GPIO as GPIO
+import time
 
-led = LED(4)
-button = Button(17)
+button_pin = 16
+led_pin = 7
+
+def ledOn(pin: int):
+    GPIO.output(pin, GPIO.HIGH)
+
+def ledOff(pin: int):
+    GPIO.output(pin, GPIO.LOW)
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(led_pin, GPIO.OUT)
+GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 while True:
-        button.wait_for_press()
-        led.on()
+    if GPIO.input(button_pin):
+        ledOff(led_pin)
+    else:
+        ledOn(led_pin)
+    time.sleep(.2)
 
-        button.wait_for_release()
-        led.off()
