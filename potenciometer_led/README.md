@@ -9,7 +9,7 @@ Raspberry Pi rads the GPIO pin as one of two values `0` and `1`. So the
 potentiometer needs to be turn on completly (all the way) to be read as `1`.
 Otherwise it'll be read as `0` even it the potentiometer is half way turned.
 
-[![Raspberry with a Potentiometer Controlling LED](./circuit.png)](https://www.circuit-diagram.org/)
+[![Raspberry with a Potentiometer Controlling LED](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
 5One leg (right or left) goes to ground pin, 2nd leg (left or right) goes
 to 5V power pin. The middle leg goes to the GPIO 14 pin. This leg will output
@@ -17,10 +17,12 @@ voltage from 0V up to 5V depending on the potentionmeter's knob position and thi
 Only when max 5V is output from the middle leg the Raspberry Pi will read a `GPIO.HIGH`
 state.
 
-The LED positive leg (kathode) geos to ground. While the egative leg (anode)
+The LED positive leg (anode) geos to ground. While the negative leg (cathode)
 requires the calculated resistor which then goes to the GPIO 12 pin. This pin
 will output a power (of 5V) for a LED when put (by a pythin script) to a
 `GPIO.HIGH` state.
+
+---
 
 ## Python
 
