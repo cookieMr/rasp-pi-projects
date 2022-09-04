@@ -17,7 +17,6 @@ Use Virtual Environemnts to not mess up with localy installed Python.
 1. Install two python modules for RPi GPIO via a `requirements.txt` file:
    * `pip install -r requirements.txt`
 1. Run one of the scripts:
-   * `python led_with_button.py`
-   * `python led_with_two_buttons.py`
+   * `python led_with_potenciometer.py`
 1. Deactivate venv `deactivate`
 
