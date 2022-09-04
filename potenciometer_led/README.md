@@ -22,6 +22,8 @@ requires the calculated resistor which then goes to the GPIO 12 pin. This pin
 will output a power (of 5V) for a LED when put (by a pythin script) to a
 `GPIO.HIGH` state.
 
+---
+
 ## Python
 
 Use Virtual Environemnts to not mess up with localy installed Python.
