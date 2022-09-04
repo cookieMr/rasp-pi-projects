@@ -50,7 +50,7 @@ After calculating with already presented equasion we get:
  * blue's resister 214 Ohm; closest value is 220 Ohm
  * green's resister 314 Ohm; closest value is 320 Ohm (thus two resistors 220 + 100) Ohm
 
-[![Created with Circut Diagram Webpage](circuit.png)](https://www.circuit-diagram.org/)
+[![Created with Circut Diagram Webpage](circuit.png)](https://www.circuit-diagram.org/editor/)
 
 ---
 

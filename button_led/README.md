@@ -5,7 +5,7 @@
 The breadbord schematic will use the BOARD mode (just like the python script).
 This means that pins use the physical numbering and not the GPIO board numbering.
 
-![Circut with 2 Buttons and 5 LEDs](./circuit.png)
+[![Circut with 2 Buttons and 5 LEDs](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
 Circut is quite simple. All LEDs are connected the same way. Negative
 leg (cathode) is connected to the GND pin, while the positove (anode)
