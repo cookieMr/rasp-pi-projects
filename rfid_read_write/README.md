@@ -24,7 +24,6 @@ LED is connected to:
   * cathode (negative leg - longer led) of LED connects with 100 Ohm resistor
   * the 100 Ohm resister connects to Raspberry Pi GPIO 16 (pin 36)
 
-
 [![Controlling LED with RFID circut](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
 ---
