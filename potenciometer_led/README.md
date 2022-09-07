@@ -11,8 +11,8 @@ Otherwise it'll be read as `0` even it the potentiometer is half way turned.
 
 [![Raspberry with a Potentiometer Controlling LED](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
-5One leg (right or left) goes to ground pin, 2nd leg (left or right) goes
-to 5V power pin. The middle leg goes to the GPIO 14 pin. This leg will output
+One leg (right or left) goes to a ground pin, 2nd leg (left or right) goes
+to a 5V power pin. The middle leg goes to the GPIO 14 pin. This leg will output
 voltage from 0V up to 5V depending on the potentionmeter's knob position and this pin.
 Only when max 5V is output from the middle leg the Raspberry Pi will read a `GPIO.HIGH`
 state.
