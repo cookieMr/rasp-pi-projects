@@ -21,8 +21,10 @@ breadbord numbering.
 
 LED is connected to:
   * anode (positive leg - short led) of LED goes to any Raspberry Pi ground pin
-  * cathode (negative leg - longer led) of LED connects with 100 Ohm resistor
-  * the 100 Ohm resister connects to Raspberry Pi GPIO 16 (pin 36)
+  * cathode (negative leg - longer led) of LED connects with $100 \Omega $
+    resistor (it's closest and greater value to $ 80 \Omega $)
+    * $ {{5V - 3.4V} \over 20mA} = {1.6V \over 0.02A} = 80 \Omega $
+  * the $ 100 \Omega $ resister connects to Raspberry Pi GPIO 16 (pin 36)
 
 [![Controlling LED with RFID circut](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
