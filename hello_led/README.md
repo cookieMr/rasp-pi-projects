@@ -25,30 +25,26 @@ The ground pin on a Raspberry physical board is 6.
 Each LED requires a resistor. See the following equasion. Symbols are described
 in a table.
 
-```
-R = (Vp - Vd) / Id
-```
+$$ R = {{V_{p} - V_{d}} \over I_{d}} $$
 
-| Symbol | Unit  |  Description   |
-|--------|-------|----------------|
-| R      | Ohm   | Resistor value |
-| Vp     | Volt  | Power voltage  |
-| Vd     | Volt  | LED voltage    |
-| Id     | Amper | LED current    |
+| Symbol  | Unit  |  Description   |
+|---------|-------|----------------|
+| $R$     | Ohm   | Resistor value |
+| $V_{p}$ | Volt  | Power voltage  |
+| $V_{d}$ | Volt  | LED voltage    |
+| $I_{d}$ | Amper | LED current    |
 
- * `Vp` a power voltage needs to be greater than `Vd` (we need to provide more voltage than LED can consume), otherwise LED won't light up
- * each GPIO outputs `5V`
- * `Id` for each LED is the same `0.007A` (which can be represented as `7mA`).
- * red LED `Vd` is between `1.6V` and `2.2V`; we take average `1.9V`
- * yellow LED `Vd` is between `2V` and `2.3V`; we take average `2.1V`
- * blue LED `Vd` is between `2V` and `3.7V`; we take average `3.5V`
- * green LED `Vd` is between `2.9V` and `4V`; we take average `2.8V`
+ * $V_{p}$ a power voltage needs to be greater than $V_{d}$ (we need to provide more voltage than LED can consume), otherwise LED won't light up
+ * each GPIO outputs $5V$
+ * $I_{d}$ for each LED is the same $0.02A$ (which can be represented as $20mA$).
+ * red LED $V_{d}$ is between on average $2V$
+ * yellow LED $V_{d}$ is between on average $2V$
+ * blue LED $V_{d}$ is between on average $3.4V$
+ * green LED $V_{d}$ is between on average $2V$
 
 After calculating with already presented equasion we get:
- * red's resister 443 Ohm; closest value is 470 Ohm 
- * yellow's resister 414 Ohm; closest value is 470 Ohm
- * blue's resister 214 Ohm; closest value is 220 Ohm
- * green's resister 314 Ohm; closest value is 320 Ohm (thus two resistors 220 + 100) Ohm
+ * red, yellow and green LEDs' resister $150 \Omega$ - closest resistor is made of two resistor, $ 100 \Omega $ and $ 47 \Omega $
+ * blue's resister $80 \Omega$ - closest resistor is $100 \Omega$
 
 [![Created with Circut Diagram Webpage](circuit.png)](https://www.circuit-diagram.org/editor/)
 
