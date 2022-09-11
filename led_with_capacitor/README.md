@@ -6,7 +6,7 @@ This is a simple circut to figure out how to connect capacitors.
 
 [![LED with a button and two Capacitors](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
-Build a regular circut for an LED without any capacitor.
+Build a regular circut for a LED without any capacitor.
  * $8.3V$ battery (actually it's a $550mA$ acumulator, a replacement for $9V$ battery)
  * blue LED, $20mA$, $3.6V$ drop volate
  * $220\Omega$ resistor
