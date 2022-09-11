@@ -12,3 +12,4 @@ These are simple projects i did on my Raspberry Pi.
 No Raspberry Pi Circuts
 
 1. [LED with capacitors](./led_with_capacitor/README.md)
+1. [LED with transistor](./led_with_transistor/README.md)
