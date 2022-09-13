@@ -14,3 +14,4 @@ No Raspberry Pi Circuts
 1. [LED with capacitors](./led_with_capacitor/README.md)
 1. [LED with transistor](./led_with_transistor/README.md)
 1. [RGB LED with buttons](./rgb_led_with_buttons/README.md)
+1. [OR Gate with two transistors](./or_gate_from_transistors/README.md)
