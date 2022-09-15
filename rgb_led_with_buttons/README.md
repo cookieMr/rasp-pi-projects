@@ -12,4 +12,8 @@ The circuit is quite simple:
  * $8.3V$ battery (a $550mAh$ acumulator - a counterpart of $9V$
  battery)
  * 3 push switches (buttons)
- 
+
+## Raspberry Pi
+
+For similar circuit backed by Raspberry Pi see [another
+mini project from this repository](../rgb_led_with_rpi/README.md).
