@@ -17,4 +17,4 @@ the output LED.
 
 ## Breadboard
 
-[![LED with a button and two Capacitors](./circuit.png)](https://www.circuit-diagram.org/editor/)
+[![OR Gate Circuit - 3 LEDs and 2 Buttons](./circuit.png)](https://www.circuit-diagram.org/editor/)

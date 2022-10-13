@@ -46,7 +46,7 @@ After calculating with already presented equasion we get:
  * red, yellow and green LEDs' resister $150 \Omega$ - closest resistor is made of two resistor, $ 100 \Omega $ and $ 47 \Omega $
  * blue's resister $80 \Omega$ - closest resistor is $100 \Omega$
 
-[![Created with Circut Diagram Webpage](circuit.png)](https://www.circuit-diagram.org/editor/)
+[![Raspberry Pi with 4 LEDs](circuit.png)](https://www.circuit-diagram.org/editor/)
 
 ---
 

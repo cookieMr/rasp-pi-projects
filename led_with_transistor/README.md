@@ -4,7 +4,7 @@ This is a simple circut to figure out how to connect a transistor.
 
 ## Breadboard
 
-[![LED with a button and two Capacitors](./circuit.png)](https://www.circuit-diagram.org/editor/)
+[![LED with a button and a Transistor](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
 Build a regular circut for a LED without any transistor and make sure the LED works.
  * $8.3V$ battery (actually it's a $550mA$ acumulator, a replacement for $9V$ battery)
