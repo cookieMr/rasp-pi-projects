@@ -2,7 +2,7 @@
 
 ## Breadboard
 
-[![LED with a button and two Capacitors](./circuit.png)](https://www.circuit-diagram.org/editor/)
+[![RGB LED with a 3 Buttons](./circuit.png)](https://www.circuit-diagram.org/editor/)
 
 The used LED is a RGB LED with a common anode. It acts like 3 separate LED diodes and by pressing different buttons together a different colors con be generated. Pressing all buttons (turing on all three colors) will yield a white light.
 

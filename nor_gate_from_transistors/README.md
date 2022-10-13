@@ -20,4 +20,4 @@ output LED is not to push button.
 
 ## Breadboard
 
-[![LED with a button and two Capacitors](./circuit.png)](https://www.circuit-diagram.org/editor/)
+[![NOR Gate with Transistors Circuit](./circuit.png)](https://www.circuit-diagram.org/editor/)
