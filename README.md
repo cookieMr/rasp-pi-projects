@@ -17,3 +17,4 @@ No Raspberry Pi Circuts
 1. [OR Gate with two transistors](./or_gate_from_transistors/README.md)
 1. [NOR Gate with two transistors](./nor_gate_from_transistors/README.md)
 1. [NOT Gate with a transistor](./not_gate_from_transistor/README.md)
+1. [NAND Gate with two transistor](./nand_gate_from_transistors/README.md)
