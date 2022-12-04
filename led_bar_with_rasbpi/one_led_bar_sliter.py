@@ -30,26 +30,24 @@ def setup():
 
 def turn_on_one_led(the_anode: int, the_cathode: int):
     for anode in anodes:
-        GPIO.output(anode, GPIO.LOW if anode != the_anode else GPIO.HIGH)
+        GPIO.output(anode, GPIO.HIGH if anode == the_anode else GPIO.LOW)
     for cathode in cathodes:
-        GPIO.output(anode, GPIO.LOW if cathode != the_cathode else GPIO.HIGH)
+        GPIO.output(anode, GPIO.LOW if cathode == the_cathode else GPIO.HIGH)
 
-def turn_all_off():
+def turn_off_all():
     for anode in anodes:
         GPIO.output(anode, GPIO.LOW)
     for cathode in cathodes:
-        GPIO.output(anode, GPIO.LOW)
+        GPIO.output(anode, GPIO.HIGH)
 
 try:
-    setup()
-    while (counter > 0):
-        for led in leds:
-            turn_on_one_led(led[0], led[1])
-            time.sleep(0.1)
-            turn_all_off()
-
+    for led in leds:
+        turn_on_one_led(led[0], led[1])
+        time.sleep(0.1)
+    
+    time.sleep(0.1)
 except KeyboardInterrupt:
-    turn_all_off()
+    turn_off_all()
 
 finally:
     GPIO.cleanup()
