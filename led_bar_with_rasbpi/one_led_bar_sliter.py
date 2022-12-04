@@ -4,6 +4,9 @@ import time
 cathodes = [11, 13, 15, 19]
 anodes = [38, 40]
 
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(led_pin, GPIO.OUT)
+
 for cathode in cathodes:
     GPIO.setup(cathode, GPIO.OUT)
     GPIO.output(cathode, 0)
@@ -27,4 +30,5 @@ try:
 
 except KeyboardInterrupt:
     GPIO.cleanup()
+GPIO.cleanup()
 
