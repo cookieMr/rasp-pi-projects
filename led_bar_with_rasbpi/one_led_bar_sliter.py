@@ -6,14 +6,14 @@ anodes = [38, 40]
 counter = 10
 
 leds = [
-    [anodes[0], cathodes[11]],
-    [anodes[0], cathodes[13]],
-    [anodes[0], cathodes[15]],
-    [anodes[0], cathodes[19]],
-    [anodes[1], cathodes[11]],
-    [anodes[1], cathodes[13]],
-    [anodes[1], cathodes[15]],
-    [anodes[1], cathodes[19]]
+    [anodes[0], cathodes[0]],
+    [anodes[0], cathodes[1]],
+    [anodes[0], cathodes[2]],
+    [anodes[0], cathodes[3]],
+    [anodes[1], cathodes[0]],
+    [anodes[1], cathodes[1]],
+    [anodes[1], cathodes[2]],
+    [anodes[1], cathodes[3]]
     ]
 
 def setup():
