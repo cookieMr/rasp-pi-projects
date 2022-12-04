@@ -21,11 +21,10 @@ try:
     while (counter > 0):
         counter -= 1
 
-        for cathode in cathodes:
-            GPIO.output(cathode, GPIO.HIGH)
+        for anode in anodes:
+            GPIO.output(anode, GPIO.HIGH)
             time.sleep(0.3)
-            GPIO.output(cathode, GPIO.LOW)
+            GPIO.output(anode, GPIO.LOW)
 
 finally:
     GPIO.cleanup()
-
