@@ -3,7 +3,7 @@ import time
 
 cathodes = [11, 13, 15, 19]
 anodes = [38, 40]
-counter = 10
+counter = 2
 
 leds = [
     [anodes[0], cathodes[0]],
