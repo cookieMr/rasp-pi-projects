@@ -1,10 +1,11 @@
 import RPi.GPIO as GPIO
 import time
 
-cathodes = [11, 13, 15, 19]
 anodes = [38, 40]
-counter = 1
-sleep_time = 0.2
+cathodes = [13, 15, 19, 11]
+
+counter = 3
+sleep_time = 0.1
 
 leds = [
     [anodes[0], cathodes[0]],
@@ -14,8 +15,7 @@ leds = [
     [anodes[1], cathodes[0]],
     [anodes[1], cathodes[1]],
     [anodes[1], cathodes[2]],
-    [anodes[1], cathodes[3]]
-    ]
+    [anodes[1], cathodes[3]]]
 
 def setup():
     GPIO.cleanup()
@@ -47,8 +47,7 @@ try:
     for led in leds:
         turn_on_one_led(led[0], led[1])
         time.sleep(sleep_time)
-    
-    time.sleep(sleep_time)
+
 except KeyboardInterrupt:
     turn_off_all()
 
