@@ -35,7 +35,7 @@ def turn_on_one_led(the_anode: Int, the_cathode: Int):
         GPIO.output(anode, GPIO.HIGH if cathode != the_cathode else GPIO.LOW)
 
 def turn_all_off():
-    or anode in anodes:
+    for anode in anodes:
         GPIO.output(anode, GPIO.LOW)
     for cathode in cathodes:
         GPIO.output(anode, GPIO.LOW)
