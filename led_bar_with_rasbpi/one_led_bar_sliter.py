@@ -4,6 +4,7 @@ import time
 cathodes = [11, 13, 15, 19]
 anodes = [38, 40]
 
+GPIO.cleanup()
 GPIO.setmode(GPIO.BOARD)
 
 for cathode in cathodes:
