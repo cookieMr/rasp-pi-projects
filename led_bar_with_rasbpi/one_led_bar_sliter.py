@@ -4,6 +4,7 @@ import time
 cathodes = [11, 13, 15, 19]
 anodes = [38, 40]
 counter = 1
+sleep_time = 0.2
 
 leds = [
     [anodes[0], cathodes[0]],
@@ -32,7 +33,7 @@ def turn_on_one_led(the_anode: int, the_cathode: int):
     for anode in anodes:
         GPIO.output(anode, GPIO.HIGH if anode == the_anode else GPIO.LOW)
     for cathode in cathodes:
-        GPIO.output(anode, GPIO.LOW if cathode == the_cathode else GPIO.HIGH)
+        GPIO.output(cathode, GPIO.LOW if cathode == the_cathode else GPIO.HIGH)
 
 def turn_off_all():
     for anode in anodes:
@@ -42,12 +43,12 @@ def turn_off_all():
 
 try:
     setup()
-    
+
     for led in leds:
         turn_on_one_led(led[0], led[1])
-        time.sleep(0.1)
+        time.sleep(sleep_time)
     
-    time.sleep(0.1)
+    time.sleep(sleep_time)
 except KeyboardInterrupt:
     turn_off_all()
 
