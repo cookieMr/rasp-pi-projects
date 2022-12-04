@@ -41,6 +41,8 @@ def turn_off_all():
         GPIO.output(anode, GPIO.HIGH)
 
 try:
+    setup()
+    
     for led in leds:
         turn_on_one_led(led[0], led[1])
         time.sleep(0.1)
