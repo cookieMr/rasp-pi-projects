@@ -28,7 +28,7 @@ def setup():
         GPIO.setup(anode, GPIO.OUT)
         GPIO.output(anode, GPIO.LOW)
 
-def turn_on_one_led(the_anode: Int, the_cathode: Int):
+def turn_on_one_led(the_anode: int, the_cathode: int):
     for anode in anodes:
         GPIO.output(anode, GPIO.LOW if anode != the_anode else GPIO.HIGH)
     for cathode in cathodes:
