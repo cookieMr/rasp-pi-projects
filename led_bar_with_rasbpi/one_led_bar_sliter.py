@@ -44,9 +44,10 @@ def turn_off_all():
 try:
     setup()
 
-    for led in leds:
-        turn_on_one_led(led[0], led[1])
-        time.sleep(sleep_time)
+    for i in range(counter):
+        for led in leds:
+            turn_on_one_led(led[0], led[1])
+            time.sleep(sleep_time)
 
 except KeyboardInterrupt:
     turn_off_all()
